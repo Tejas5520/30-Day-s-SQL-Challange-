@@ -25,6 +25,7 @@ INSERT INTO brands(
 	('Google',null, 2020, 5, 9, null, null),
 	('Oneplus','Nothing', 2020, 5, 9, 6, 3);
 
+
 with cte as
            (select *,case when brand1 < brand2 then concat(brand1,brand2,year) 
 	      else concat(brand2,brand1,year) end as Pair_id
