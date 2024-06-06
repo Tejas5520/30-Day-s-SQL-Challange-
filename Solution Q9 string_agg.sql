@@ -17,7 +17,6 @@ INSERT INTO orders VALUES
 (2, '2024-02-19', 101),
 (2, '2024-02-19', 106); 
 
-
 select dates,cast(product_id as varchar) as products from orders
 --where customer_id = 1 and dates = '2024-02-18'
 union 
